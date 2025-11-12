@@ -1,0 +1,108 @@
+/* General layout */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  width: 400px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: #1f5ef2;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+/* Add item */
+.add-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-item input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.action-btn {
+  background: #1f5ef2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #0e46c2;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: #f8faff;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Delete button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f03e3e;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #c92a2a;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 15px;
+}
